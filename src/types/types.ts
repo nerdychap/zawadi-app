@@ -8,8 +8,8 @@ export type EmployeeType = {
 };
 
 export type AppContextType = {
-    employees: EmployeeType[];
-    setEmployees: React.Dispatch<SetStateAction<EmployeeType[]>>;
-    handleDelete: (id: string) => void;
-    handleAddEmployee: (employee: EmployeeType) => void;
-  };
+  employees: EmployeeType[];
+  setEmployees: React.Dispatch<SetStateAction<EmployeeType[]>>;
+  handleDelete: (id: string) => void;
+  handleAddEmployee: (employee: EmployeeType) => void;
+};

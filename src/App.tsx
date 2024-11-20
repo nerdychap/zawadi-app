@@ -3,11 +3,9 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <AppContextWrapper>
-        <Home />
-      </AppContextWrapper>
-    </>
+    <AppContextWrapper>
+      <Home />
+    </AppContextWrapper>
   );
 }
 
