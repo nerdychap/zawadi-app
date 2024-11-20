@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# Zawadi App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Zawadi App is a React + TypeScript application built with Vite. It provides a dashboard that displays a hierarchical list of employees. Managers can be expanded to show the employees under them. Users can add new employees through a form that collects the employee's name, role, and manager.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Hierarchical Employee List**: View employees organized under their respective managers.
+- **Add Employees**: Use a form to add new employees by specifying their name, role, and manager.
+- **Interactive UI**: Expand and collapse managers to show or hide their employees.
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow these steps to get the Zawadi App running on your local machine:
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Node.js (version 14 or later)
+- yarn (version 1.22 or later)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/ynerdychap/zawadi-app.git
+    cd zawadi-app
+    ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. **Install dependencies**:
+    ```bash
+    yarn install
+    ```
+
+### Running the App
+
+1. **Start the development server**:
+    ```bash
+    yarn dev
+    ```
+
+2. Open your browser and navigate to `http://localhost:5173` to see the app in action.
+
+### Building for Production
+
+1. **Build the app**:
+    ```bash
+    yarn build
+    ```
+
+2. **Preview the production build**:
+    ```bash
+    yarn preview
+    ```
