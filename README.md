@@ -21,7 +21,7 @@ Follow these steps to get the Zawadi App running on your local machine:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/ynerdychap/zawadi-app.git
+    git clone https://github.com/nerdychap/zawadi-app.git
     cd zawadi-app
     ```
 
